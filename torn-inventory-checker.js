@@ -21,11 +21,29 @@
   };
 
   GM_addStyle(`
-        #tic-summary {position:fixed;top:80px;right:20px;z-index:9999;background:#1d1d1d;color:#fff;border:2px solid #444;border-radius:8px;padding:8px 12px;font-family:Arial, sans-serif;font-size:14px;min-width:180px;line-height:1.4;}
-        #tic-summary h3 {margin:0 0 6px 0;font-size:15px;text-align:center;}
-        .tic-item-ok {color:#8aff8a;}
-        .tic-item-low {color:#ff8484;font-weight:bold;}
-        .tic-highlight {outline:3px solid #ff5555 !important;border-radius:6px;}
+    #tic-summary {
+      position:fixed;
+      top:80px;
+      right:20px;
+      z-index:9999;
+      background:#1d1d1d;
+      color:#fff;
+      border:2px solid #444;
+      border-radius:8px;
+      padding:8px 12px;
+      font-family:Arial, sans-serif;
+      font-size:14px;
+      min-width:180px;
+      line-height:1.4;
+    }
+    #tic-summary h3 {
+      margin:0 0 6px 0;
+      font-size:15px;
+      text-align:center;
+    }
+    .tic-item-ok {color:#8aff8a;}
+    .tic-item-low {color:#ff8484;font-weight:bold;}
+    .tic-highlight {outline:3px solid #ff5555 !important;border-radius:6px;}
     `);
 
   function createSummaryPanel() {
