@@ -44,6 +44,12 @@
     .tic-item-ok {color:#8aff8a;}
     .tic-item-low {color:#ff8484;font-weight:bold;}
     .tic-highlight {outline:3px solid #ff5555 !important;border-radius:6px;}
+    @media screen and (max-width: 1000px) {
+      #tic-summary {
+        position: static;
+        margin-bottom: 10px;
+      }
+    }
     `);
 
   function createSummaryPanel() {
