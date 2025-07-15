@@ -144,4 +144,3 @@
 
   runOnceVisible("span.name-wrap", initAfterRender);
 })();
-
