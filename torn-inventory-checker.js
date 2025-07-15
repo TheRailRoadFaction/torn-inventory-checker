@@ -58,7 +58,8 @@
     box.id = "tic-summary";
     box.innerHTML =
       '<h3>Inventory Check</h3><div id="tic-body">Scanning…</div>';
-    document.body.appendChild(box);
+    const itemsbox = document.getElementsByClassName("primary-items")[0];
+    itemsbox.parentNode.insertBefore(box, itemsbox);
   }
 
   function updateSummary(results) {
